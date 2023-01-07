@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="cgapp logo" src="" width="250px"/><br/><br/>
+  <img alt="cgapp logo" src="https://i.imgur.com/xCTL1jm.png" width="300px"/><br/><br/>
   YouTube app built with React and RapidAPI.
 </h1>
 <p align="center">Watch videos, switch to a channel or category.</p>
@@ -14,6 +14,4 @@
 
 ## 🔍 Preview
 
-<p align="left"><img align="center" width="500" src=""/></p><br/><br/>
-
-<p align="center"><code>Made with ❤️ and JavaScript.</code></p>
+<p align="left"><img align="center" width="500" src=""/></p>
