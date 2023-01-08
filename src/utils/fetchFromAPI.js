@@ -1,5 +1,4 @@
 import axios from 'axios'
-const key = import.meta.env.VITE_REACT_APP_RAPID_API_KEY
 
 const BASE_URL = 'https://youtube-v31.p.rapidapi.com'
 

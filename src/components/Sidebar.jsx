@@ -1,7 +1,6 @@
-import React from 'react'
+import { categories } from '../utils/constans'
 
 import { Stack } from '@mui/material'
-import { categories } from '../utils/constans'
 
 const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
 	return (

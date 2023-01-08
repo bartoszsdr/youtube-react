@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player'
 import { Stack, Box, Typography } from '@mui/material'
 import { Check, CheckCircle } from '@mui/icons-material'
 
-import { Videos } from './'
+import { Videos, Loader } from './'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
 
 const VideoDetail = () => {
@@ -21,7 +21,7 @@ const VideoDetail = () => {
 		fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(data => setVideos(data.items))
 	}, [id])
 
-	if (!videoDetail?.snippet) return 'Loading...'
+	if (!videoDetail?.snippet) return <Loader />
 
 	const {
 		snippet: { title, channelId, channelTitle },

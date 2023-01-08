@@ -6,7 +6,7 @@ import { Sidebar, Videos } from './'
 import { Box, Stack, Typography } from '@mui/material'
 
 const Feed = () => {
-	const [selectedCategory, setSelectedCategory] = useState('New')
+	const [selectedCategory, setSelectedCategory] = useState('Home')
 	const [videos, setVideos] = useState([])
 
 	useEffect(() => {
@@ -15,10 +15,22 @@ const Feed = () => {
 
 	return (
 		<Stack sx={{ flexDirection: { sx: 'column', md: 'row' } }}>
-			<Box sx={{ height: { sx: 'auto', md: '92vh' }, borderRight: '1px solid #3d3d3d', px: { sx: 0, md: 2 } }}>
+			<Box
+				display="flex"
+				flexDirection="column"
+				alignItems="center"
+				sx={{ height: { sx: 'auto', md: '92vh' }, borderRight: '1px solid #3d3d3d', px: { sx: 0, md: 2 } }}>
 				<Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
-				<Typography className="copyright" variant="body2" sx={{ mt: 1.5, color: '#fff' }}>
-					Copyright 2022 Codecave
+				<Typography className="copyright" variant="caption" sx={{ mt: 'auto', color: '#fff' }}>
+					Developed by
+					<a
+						href="https://codecave.pl/"
+						aria-label="GitHub Link"
+						rel="noopener noreferrer"
+						target="_blank"
+						style={{ color: '#008afb', marginLeft: 5 }}>
+						Codecave
+					</a>
 				</Typography>
 			</Box>
 			<Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
