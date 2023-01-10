@@ -6,7 +6,7 @@ import { Sidebar, Videos } from './'
 import { Box, Stack, Typography } from '@mui/material'
 
 const Feed = () => {
-	const [selectedCategory, setSelectedCategory] = useState('Home')
+	const [selectedCategory, setSelectedCategory] = useState('New')
 	const [videos, setVideos] = useState([])
 
 	useEffect(() => {

@@ -15,7 +15,7 @@ import DeveloperModeIcon from '@mui/icons-material/DeveloperMode'
 export const logo = 'https://i.imgur.com/cUqGPaQ.png'
 
 export const categories = [
-	{ name: 'Home', icon: <HomeIcon /> },
+	{ name: 'New', icon: <HomeIcon /> },
 	{ name: 'Music', icon: <MusicNoteIcon /> },
 	{ name: 'Movies', icon: <OndemandVideoIcon /> },
 	{ name: 'Live', icon: <LiveTvIcon /> },
