@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { demoProfilePicture } from '../utils/constans'
 
 import { Box, CardContent, CardMedia, Typography } from '@mui/material'
-import { CheckCircle } from '@mui/icons-material'
+import { Block, CheckCircle } from '@mui/icons-material'
 
 const ChannelCard = ({ channelDetail, marginTop }) => {
 	return (
@@ -40,7 +40,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
 						}}>
 						<Typography variant="h6">
 							{channelDetail?.snippet?.title}
-							<CheckCircle sx={{ fontSize: 14, color: 'gray', ml: '5px' }} />
+							<CheckCircle sx={{ fontSize: 14, color: 'gray', ml: '5px', mt: '200px' }} />
 						</Typography>
 						{channelDetail?.statistics?.subscriberCount && (
 							<Typography>
