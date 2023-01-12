@@ -14,4 +14,4 @@
 
 ## 🔍 Preview
 
-<p align="left"><img align="center" width="500" src=""/></p>
+<p align="left"><img align="center" width="1000" src="https://i.imgur.com/MKYkSPY.png"/></p>
